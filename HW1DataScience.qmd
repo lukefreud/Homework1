@@ -1,0 +1,55 @@
+---
+title: "Data Science Exploration"
+format: html
+editor: visual
+---
+
+## Questions with Answers
+
+### Question 1: What do you think being a data scientist is about?
+
+I think being a data scientist is about having skills to perform an end-to-end process where you receive data and ultimately use that data to answer a question of interest. This is a list of the steps data scientists follow:
+
+1.  Start with data that may be messy and clean that data
+
+2.  Modify the data into a format you can fit models on.
+
+3.  Run the models and analyze the output.
+
+4.  Figure out what the data actually means in terms of your research question.
+
+### Question 2: What differences/similarities do you see between data scientists and statisticians?
+
+The main difference between statisticians and data scientists are that data scientists bring models to the data, where statisticians bring data to models. Data scientists do not always receive cleaned data and they must manipulate and add to it in order to get it in the form they want. Statisticians usually receive data that is mostly cleaned already, and they focus more of the time on advanced modeling of the data.
+
+### Question 3: How do you view yourself in relation to these two areas?
+
+I view myself as more of a data scientist than a statistician. I actually enjoy the end-to-end process and dealing with data more so I can get it into a form that is needed for my statistical tests. I also really enjoy interpreting my results of the data in terms of the big-picture question, which I feel a data scientist does more than a statistician.
+
+## R Code Section
+
+### Determining class, structure, and type of data used
+
+```{r}
+y <- density(iris$Sepal.Length)
+class(y)
+typeof(y)
+str(y)
+```
+
+### Plotting data
+
+```{r}
+plot(y)
+```
+
+
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
